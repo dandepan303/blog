@@ -10,7 +10,7 @@ tags:
 weight: 1       # You can add weight to some posts to override the default sorting (date descending)
 ---
 
-Hey! It's me, Dean. welp, here we are. This is my (almost) selfhosted blog/portfolio/git server for my stuff. I will probably post anything here that I think is interesting.
+Hey! It's me, Dean. Welp, here we are. This is my (almost) selfhosted blog/portfolio/git server for my stuff. I will probably post anything here that I think is interesting.
 
 This site is mostly inspired by my great friend [nixwiz](https://clucknugget.net) and you should check him out. He is way smarter than me and even has an ssh server located on his awesome (truly) selfhosted website.
 
