@@ -2,7 +2,7 @@
 title: Hello World?
 description: Hello Everyone
 slug: hello-world
-date: 2024-08-23 00:00:00+0000
+date: 2024-08-23 08:34:23+0000
 image: cover.jpg
 categories:
     - Personal
