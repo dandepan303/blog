@@ -22,22 +22,29 @@ Don't question what's in my setup. If you do, I guess you can leave a comment, b
 
 It renders frames and executes programs when it feels like it
 
-### GPU:
+### GPU
 
-GIGABYTE NVIDIA RTX 4070
+- GIGABYTE NVIDIA RTX 4070
 
-### CPU:
+### CPU
 
-AMD Ryzen 7 7800X3D
+- AMD Ryzen 7 7800X3D
+- Cooled with a NZXT Kraken 240 Elite
 
-### RAM:
+### RAM
 
-T-Force Vulcan DDR5 2 x 8gb (16gb)
+- T-Force Vulcan DDR5
+- 2 x 8gb (16gb)
+- @7000 mhz
 
-### Motherboard:
+### Motherboard
 
-GIGABYTE B550
+- GIGABYTE B550
 
-### Power Supply:
+### Case
 
-GIGABYTE 750w 80+ Gold Certified (hoping it won't catch fire rn)
+- NZXT H6 Flow RGB
+
+### Power Supply
+
+- GIGABYTE 750w 80+ Gold Certified (hoping it won't catch fire rn)
