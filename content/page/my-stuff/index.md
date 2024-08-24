@@ -21,3 +21,18 @@ Don't question what's in my setup. If you do, I guess you can leave a comment, b
 ## Main PC
 
 It renders frames and executes programs when it feels like it
+
+- GPU:
+  - GIGABYTE NVIDIA RTX 4070
+
+- CPU:
+  - AMD Ryzen 7 7800X3D
+
+- RAM:
+  - T-Force Vulcan DDR5 2 x 8gb (16gb)
+
+- Motherboard:
+  - GIGABYTE B550
+
+- Power Supply:
+  - GIGABYTE 750w 80+ Gold Certified (hoping it won't catch fire rn)
