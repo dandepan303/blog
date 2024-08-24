@@ -20,4 +20,4 @@ Don't question what's in my setup. If you do, I guess you can leave a comment, b
 
 ## Main PC
 
-### It renders frames and executes programs when it feels like it
+It renders frames and executes programs when it feels like it
