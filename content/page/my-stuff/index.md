@@ -14,9 +14,7 @@ menu:
 comments: false
 ---
 
-To use this feature, add `links` section to frontmatter.
-
-This page's frontmatter:
+This is where I put my stuff in my setup. Maybe it's to flex, but it's mostly for me in case I ever forget what I have.
 
 ```yaml
 links:
