@@ -11,21 +11,13 @@ menu:
         params:
             icon: link
 
-comments: false
+comments: true
 ---
 
 This is where I put my stuff in my setup. Maybe it's to flex, but it's mostly for me in case I ever forget what I have.
 
-```yaml
-links:
-  - title: GitHub
-    description: GitHub is the world's largest software development platform.
-    website: https://github.com
-    image: https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png
-  - title: TypeScript
-    description: TypeScript is a typed superset of JavaScript that compiles to plain JavaScript.
-    website: https://www.typescriptlang.org
-    image: ts-logo-128.jpg
-```
+Don't question what's in my setup. If you do, I guess you can leave a comment, but if you really judge, I might have to ban you.
 
-`image` field accepts both local and external images.
+## Main PC
+
+### It renders frames and executes programs when it feels like it
