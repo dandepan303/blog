@@ -1,5 +1,5 @@
 ---
-title: My Tools
+title: My Stuff
 links:
   - title: GitHub
     description: GitHub is the world's largest software development platform.
@@ -9,7 +9,7 @@ menu:
     main: 
         weight: 4
         params:
-            icon: tool
+            icon: link
 
 comments: false
 ---
