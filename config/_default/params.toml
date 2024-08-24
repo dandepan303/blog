@@ -53,7 +53,7 @@ type = "tag-cloud"
 limit = 10
 
 [[widgets.page]]
-type = "toc"
+type = "tag-cloud"
 
 [opengraph.twitter]
 site = ""
