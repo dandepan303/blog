@@ -1,6 +1,6 @@
 ---
 title: Hello World?
-description: Hello
+description: Hello Everyone
 slug: hello-world
 date: 2024-08-23 00:00:00+0000
 image: cover.jpg
