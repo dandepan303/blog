@@ -18,6 +18,8 @@ This is where I put my stuff in my setup. Maybe it's to flex, but it's mostly fo
 
 Don't question what's in my setup. If you do, I guess you can leave a comment, but if you really judge, I might have to ban you.
 
+---
+
 ## Main PC
 
 It renders frames and executes programs when it feels like it
@@ -47,4 +49,7 @@ It renders frames and executes programs when it feels like it
 
 ### Power Supply
 
-- GIGABYTE 750w 80+ Gold Certified (hoping it won't catch fire rn)
+- GIGABYTE 750w 80+ Gold Certified (hoping it won't catch fire)
+
+---
+
