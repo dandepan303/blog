@@ -11,8 +11,31 @@ tags:
 weight: 1       # You can add weight to some posts to override the default sorting (date descending)
 ---
 
-Hey! It's me, Dean. Welp, here we are. This is my (almost) selfhosted blog/portfolio/git server for my stuff. I will probably post anything here that I think is interesting.
+## Backstory
 
-This site is mostly inspired by my great friend [nixwiz](https://clucknugget.net) and you should check him out. He is way smarter than me and even has an ssh server located on his awesome (truly) selfhosted website.
+I built this specific keyboard a month ago, (before this blog existed) and never thought about posting it until now.
+I was looking for something other than my modded Rainy75 Pro. After hours of researching, I decided on a creamy sound profile with linear switches, specifically Alpaca v2s.
 
-> Photo by [Pawel Czerwinski](https://unsplash.com/@pawel_czerwinski) on [Unsplash](https://unsplash.com/)
+After ordering all the parts, it was time to assemble them.
+
+## My personal lubing process
+
+Lubing is essential to getting a smoother glide on any switch. But even with today’s much better factory lubing, I prefer to lube my switches myself.
+
+![Tools Of the Trade.](tools.jpg)
+
+From left to right: switch lubing station switch opener, Krytox 205g0, Krytox xht-bdz, Krytox 105g0, stem holder, brush.
+While not essential, the switch lubing station helps a lot when having to mass-lube. It contains slots for springs, stems, and both the bottom and the top housings.
+
+The switch opener, in my opinion, is absolutely essential for lubing. You could, try to pry open each of your switches with a screwdriver, but that comes with a risk of hurting yourself.
+
+Each different type of lube has its own viscosity and use case. Krytox is a very popular brand in the hobbyist keyboard market, known for their industrial grade lubricants.
+
+- 205g0: Stems, housings, and springs of switches
+- xht-bdz: Stabilizer wires (Ill get to this later)
+- 105g0: Oil based lube for springs
+- Stem holder: Pretty self explanatory. Holds stems for easy lubing. Not essential, but it makes things 100x easier.
+- Brush: A brush.
+Caption: How a switch opener works
+
+> Photos by [Me, Dean Hiran](https://github.com/dandepan303)
