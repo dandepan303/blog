@@ -14,4 +14,4 @@ menu:
 comments: true
 ---
 
-A section for music stuffs.
+A requested section for music reviews by my friend, Henry. Click on each song's tab to see the song on Spotify.
