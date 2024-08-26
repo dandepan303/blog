@@ -1,8 +1,8 @@
 ---
 title: My Favorite Keyboard Build So Far
-description: Hello Everyone
-slug: hello-world
-date: 2024-08-23 08:34:23+0000
+description: (It's Creamy)
+slug: mode-envoy
+date: 2024-08-26 07:36:27+0000
 image: cover.jpg
 categories:
     - Hardware
