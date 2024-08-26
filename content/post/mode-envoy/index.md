@@ -36,6 +36,7 @@ Each different type of lube has its own viscosity and use case. Krytox is a very
 - 105g0: Oil based lube for springs
 - Stem holder: Pretty self explanatory. Holds stems for easy lubing. Not essential, but it makes things 100x easier.
 - Brush: A brush.
-Caption: How a switch opener works
+
+![How a switch opener works](switch-opener.jpg)
 
 > Photos by [Me, Dean Hiran](https://github.com/dandepan303)
