@@ -9,7 +9,7 @@ menu:
     main: 
         weight: 4
         params:
-            icon: link
+            icon: computer
 
 comments: true
 ---
@@ -31,13 +31,13 @@ It renders frames and executes programs when it feels like it
 ### CPU
 
 - AMD Ryzen 7 7800X3D
-- Cooled with a NZXT Kraken 240 Elite
+  - Cooled with a NZXT Kraken 240 Elite
 
 ### RAM
 
 - T-Force Vulcan DDR5
-- 2 x 8gb (16gb)
-- @7000 mhz
+  - 2 x 8gb (16gb)
+  - @7000 mhz (XMP 2)
 
 ### Motherboard
 
@@ -52,4 +52,3 @@ It renders frames and executes programs when it feels like it
 - GIGABYTE 750w 80+ Gold Certified (hoping it won't catch fire)
 
 ---
-
