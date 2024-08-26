@@ -14,7 +14,7 @@ weight: 1       # You can add weight to some posts to override the default sorti
 ## Backstory
 
 I built this specific keyboard a month ago, (before this blog existed) and never thought about posting it until now.
-I was looking for something other than my modded Rainy75 Pro. After hours of researching, I decided on a creamy sound profile with linear switches, specifically Alpaca v2s.
+I was looking for something other than my modded Rainy75 Pro. After hours of researching, I decided on a creamy sound profile with linear switches, specifically Alpaca v2s. For the creamy sound profile, I decided on the Mode Envoy from mode designs with an FR4 plate, white coating, and gold accents and weights.
 
 After ordering all the parts, it was time to assemble them.
 
@@ -38,5 +38,11 @@ Each different type of lube has its own viscosity and use case. Krytox is a very
 - Brush: A brush.
 
 ![How a switch opener works](switch-opener.jpg)
+
+The switch opener makes things way easier. All you have to do is press down on the switch to open it.
+
+![The parts of a standard mechanical switch keyboard](parts.png)
+
+Once the switch is opened, the switch has 4 main parts. The top and bottom housings, the stem, and the spring. Personally, I prefer to only lube the stem and the spring, as the spring, which contats the bottom housing, will lube the bottom housing automatically. The stem, which contacts the top housing and slides against it, will also lube the top housing.
 
 > Photos by [Me, Dean Hiran](https://github.com/dandepan303)
