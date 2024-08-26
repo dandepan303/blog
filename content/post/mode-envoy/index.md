@@ -37,12 +37,14 @@ Each different type of lube has its own viscosity and use case. Krytox is a very
 - Stem holder: Pretty self explanatory. Holds stems for easy lubing. Not essential, but it makes things 100x easier.
 - Brush: A brush.
 
-![How a switch opener works](switch-opener.jpg)
+![How a switch opener works](switch-opener.jpg) ![A switch after being opened.](switch-open.jpg)
 
 The switch opener makes things way easier. All you have to do is press down on the switch to open it.
 
 ![The parts of a standard mechanical switch keyboard](parts.png)
 
 Once the switch is opened, the switch has 4 main parts. The top and bottom housings, the stem, and the spring. Personally, I prefer to only lube the stem and the spring, as the spring, which contats the bottom housing, will lube the bottom housing automatically. The stem, which contacts the top housing and slides against it, will also lube the top housing.
+
+![Lubing the stem of the switch with 205g0](lubing-stem.jpg) ![Lubing the ends of the spring with 205g0](lubing-spring.jpg)
 
 > Photos by [Me, Dean Hiran](https://github.com/dandepan303)
