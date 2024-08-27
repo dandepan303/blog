@@ -2,7 +2,7 @@
 title: My Favorite Keyboard Build So Far
 description: (It's Creamy)
 slug: mode-envoy
-date: 2024-08-26 07:36:27+0000
+date: 2024-08-27 18:12:27+0000
 image: cover.jpg
 categories:
     - Hardware
@@ -46,5 +46,19 @@ The switch opener makes things way easier. All you have to do is press down on t
 Once the switch is opened, the switch has 4 main parts. The top and bottom housings, the stem, and the spring. Personally, I prefer to only lube the stem and the spring, as the spring, which contats the bottom housing, will lube the bottom housing automatically. The stem, which contacts the top housing and slides against it, will also lube the top housing.
 
 ![Lubing the stem of the switch with 205g0](lubing-stem.jpg) ![Lubing the ends of the spring with 205g0](lubing-spring.jpg)
+
+After inserting the switches, assembling the board with all the foams, and putting on the keycaps, we are done!
+
+## Results
+
+The keyboard turned out great, and I think it provides a much needed contrast to my all black setup.
+
+![It looks (and feels) amazing!](top.jpg) ![(Milkshake keycaps used)](side.jpg)
+
+Now, for the most important part, the sound!
+
+{{< youtube 8ZhRrg-9bFA >}}
+
+An interesting sound profile, it has some cremy-ness to it, but it also has something else I can't put my finger on. I personally like it!
 
 > Photos by [Me, Dean Hiran](https://github.com/dandepan303)
