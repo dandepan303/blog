@@ -1,7 +1,7 @@
 ---
 title: Hardmodding My Switch
 description: Hopefully I don't turn it into a paperweight
-slug: hello-world
+slug: hardmodding-my-switch
 date: 2024-08-23 08:34:23+0000
 image: cover.jpg
 categories:
