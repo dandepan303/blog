@@ -5,8 +5,9 @@ slug: hardmodding-my-switch
 date: 2024-08-23 08:34:23+0000
 image: cover.jpg
 categories:
-    - Personal
+    - Hardware
 tags:
+    - Nintendo Switch
 weight: 1       # You can add weight to some posts to override the default sorting (date descending)
 ---
 
