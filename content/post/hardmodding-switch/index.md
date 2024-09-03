@@ -13,7 +13,7 @@ weight: 1       # You can add weight to some posts to override the default sorti
 
 > ## QUICK WARNING
 >
-> This is not a comprehensive guide. Just a blog post about how I did it myself. If you want to "mod/hack" your switch, I recommend following thourough guides on [switch.hacks.guide](https://switch.hacks.guide) and following the dissassembly guides on [IFIXIT](https://www.ifixit.com/Teardown/Nintendo+Switch+Teardown/78263?srsltid=AfmBOopafqIlha4w_7wViLBNHRTsR9xevz8mXbvGGDWJCnt6BXANPRET).
+> This is not a comprehensive guide. Just a blog post about how I did it myself. If you want to "mod/hack" your switch, I recommend following thourough guides on [switch.hacks.guide](https://switch.hacks.guide) and following the dissassembly guides on [ifixit](https://www.ifixit.com/Teardown/Nintendo+Switch+Teardown/78263?srsltid=AfmBOopafqIlha4w_7wViLBNHRTsR9xevz8mXbvGGDWJCnt6BXANPRET). As always, you, and only you, are responsible for what happens to your console.
 
 Hey! It's me, Dean. Welp, here we are. This is my (almost) selfhosted blog/portfolio/git server for my stuff. I will probably post anything here that I think is interesting.
 
