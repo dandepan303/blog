@@ -94,6 +94,8 @@ Time to pry open the IHS to expose the bare SoC die and RAM chips.
 
 We can now clean up the thermal paste on the SoC die and around/in-between the capacitors on the SoC using IPA and q-tips.
 
-![H]
+![Tinned SoC ribbon.](tinned.png)
+
+Before we can install the modchip, we have to pre-tin the ribbon cable.
 
 > Photos by [Me, Dean Hiran](https://github.com/dandepan303)
