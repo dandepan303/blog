@@ -25,7 +25,7 @@ After doing a bit of research, the Switch runs on the Nvidia Tegra X1, an 8-year
 
 ![Performance graphed using Geekbench 5. Credit: Geekerwan on YouTube](performance.png)
 
-Normally, the Switch’s cpu is underclocked and undervolted to a meager 1 GHz (for thermals and battery life). On the other hand, the X1 is rated to go as fast as 2 ghz, and with the correct overclocking, we can achieve 2.3 GHz on the cpu, 1267 MHz on the gpu, and 2311 MHz on the ram. This is more on par with the Snapdragon 821, very impressive for a processor of this age.
+Normally, the Switch’s CPU is underclocked and undervolted to a meager 1 GHz (for thermals and battery life). On the other hand, the X1 is rated to go as fast as 2 ghz, and with the correct overclocking, we can achieve 2.3 GHz on the CPU, 1267 MHz on the gpu, and 2311 MHz on the ram. This is more on par with the Snapdragon 821, very impressive for a processor of this age.
 
 Infographic oc
 
@@ -35,11 +35,17 @@ The main factor in the method of jailbreaking your Switch depends on your model.
 
 For Erista consoles, there is a bug that exists, allowing you to short 2 pins on the right JoyCon rail to bypass BOOT0 and inject a payload for your Switch to boot instead of HorizonOS (normal Switch OS). This can be achieved by soldering a joy-con, or using a paperclip or rcm jig.
 
-For Mariko (V2) consoles, they are only able to be jailbroken by using a modchip, which requires soldering 4 tiny contacts to 2 capacitors on the cpu to “voltage glitch” the cpu into booting payload.bin on the microsd card instead of BOOT0. The modchip works by infiltrating the communication between the main board and the sysnand. This is an extremely condensed explanation, and if you want to a full one, you can visit this website.
+For Mariko (V2) consoles, they are only able to be jailbroken by using a modchip, which requires soldering 4 tiny contacts to 2 capacitors on the CPU to “voltage glitch” the CPU into booting payload.bin on the microsd card instead of BOOT0. The modchip works by infiltrating the communication between the main board and the sysnand. This is an extremely condensed explanation, and if you want to a full one, you can visit this website.
 
 For Nintendo Switch oled models, you also need a modchip, but the process is much more lengthy and requires a microscope.
 I, personally own a Switch V2, so I will go down the modchip route.
 
 ## 6-year-old flux and 215C Sticks
 
-> Photos by [Me](https://unsplash.com/@pawel_czerwinski) on [Unsplash](https://unsplash.com/)
+For modchipping my Switch, I will be using the Picofly Core, based on the fully open source RP2040 microcontroller and it's firmware.
+
+![The Picofly Core parts.](picofly-core.png)
+
+You can find this modchip on AliExpress by searching Picofly Core, for about $11-$12. I personally got the modchip in a flash sale, only costing me $1, making it $2.12 after taxes and shipping! Flash sales are pretty common, so I recco
+
+> Photos by [Me, Dean Hiran](https://github.com/dandepan303)
