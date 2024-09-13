@@ -46,6 +46,6 @@ For modchipping my Switch, I will be using the Picofly Core, based on the fully 
 
 ![The Picofly Core parts.](picofly-core.png)
 
-You can find this modchip on AliExpress by searching Picofly Core, for about $11-$12. I personally got the modchip in a flash sale, only costing me $1, making it $2.12 after taxes and shipping! Flash sales are pretty common, so I recco
+You can find this modchip on AliExpress by searching Picofly Core, for about $11-$12. I personally got the modchip in a flash sale, only costing me $1, making it $2.12 after taxes and shipping! Flash sales are pretty common, so I reccomend trying to find the modchip on multiple devices before buying.
 
 > Photos by [Me, Dean Hiran](https://github.com/dandepan303)
