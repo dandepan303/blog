@@ -68,34 +68,30 @@ These are my recommendation for tools to install the modchip.
 
 Time to open the Switch up!
 
-![The Switch's backplate](1.png)
+![The Switch's backplate](1.png) ![That's a beefy back heatshield.](2.png)
 
 The four tri-point Y1.5 bits are Nintendo's way of saying "keep out!", but the back cover comes off easily after removing the 7+00 bits, 2 on top, 2 on bottom, one hidden under the micro-sd card, and both of the the third screws down from the top on each Joy-Con rail.
-
-![That's a beefy back heatshield.](2.png)
 
 If you think about it, the Switch is really impressive for its form factor, having an ingenious active cooling system.
 
 Next step is to pick at and remove the micro-sd card reader.
 
-![I'm all in for easy replaceable parts.](3.png)
+![I'm all in for easy replaceable parts.](3.png) ![That's a nice heatsink and fan.](4.png)
 
 Let's remove the 6 +00 screws to reveal the mainboard!
 
-![That's a nice heatsink and fan.](4.png)
-
 Removing the 3 screws on the heatsink reveals the IHS (Internal Heat Spreader), responsible for removing heat from the SoC die and the RAM. This is where the SoC ribbon cable will sit.
 
-![Just use IPA and q-tips to remove the thermal gunk.](5.png)
+![Just use IPA and q-tips to remove the thermal gunk.](5.png) ![The capacitors are so tiny!](6.png)
 
 Time to pry open the IHS to expose the bare SoC die and RAM chips.
 
-![The capacitors are so tiny!](6.png)
-
 We can now clean up the thermal paste on the SoC die and around/in-between the capacitors on the SoC using IPA and q-tips.
 
-![Tinned SoC ribbon.](tinned.png)
+Before we can install the modchip, we have to pre-tin the ribbon cable. This works by putting on solder onto the contacts before we install it. This is much easier than melting the solder when it is on the capacitor because it could cause overbridging.
 
-Before we can install the modchip, we have to pre-tin the ribbon cable.
+![Lined up with the tiny capacitors.](lined-up.jpg)
+
+Now that we have lined up the SoC ribbon cables
 
 > Photos by [Me, Dean Hiran](https://github.com/dandepan303)
