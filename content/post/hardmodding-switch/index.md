@@ -90,8 +90,18 @@ We can now clean up the thermal paste on the SoC die and around/in-between the c
 
 Before we can install the modchip, we have to pre-tin the ribbon cable. This works by putting on solder onto the contacts before we install it. This is much easier than melting the solder when it is on the capacitor because it could cause overbridging.
 
-![Lined up with the tiny capacitors.](lined-up.jpg)
+After pre-tinning, we can melt the solder to bridge the capactor contacts.
 
-Now that we have lined up the SoC ribbon cables
+![Yes, that flux is 6 years old.](lined-up.jpg)
+
+Now, all that is left to do is to unplug the eMMc module and insert the modchip itself!
+
+![The modchip will sit above the IHS.](modchip-installed.png)
+
+Turning the Switch on, we are greeted by the picofly menu!
+
+![The Switch needs a few seconds to voltage glitch before showing the menu.](success.jpg)
+
+We have installed the modchip successfully! This post is already getting long, so I will show what I will do with my jaibroken Switch in a later post. Stay tuned!
 
 > Photos by [Me, Dean Hiran](https://github.com/dandepan303)
