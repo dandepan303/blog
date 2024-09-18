@@ -12,6 +12,7 @@ weight: 1       # You can add weight to some posts to override the default sorti
 ---
 
 -- Mouse Review Coming Soon --
+
 Update 9/18/24: Testing mouse! Review coming next week!
 
 > Photo by [Pawel Czerwinski](https://unsplash.com/@pawel_czerwinski) on [Unsplash](https://unsplash.com/)
