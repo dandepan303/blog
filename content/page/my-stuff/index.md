@@ -12,8 +12,6 @@ comments: true
 
 This is where I put my stuff in my setup. Maybe it's to flex, but it's mostly for me in case I ever forget what I have.
 
-Don't question what's in my setup. If you do, I guess you can leave a comment, but if you really judge, I might have to ban you.
-
 ---
 
 ## Main PC
