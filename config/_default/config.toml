@@ -1,5 +1,5 @@
 # Change baseurl before deploy
-baseurl = "https://dean.is-a.dev"
+baseurl = "https://dandepan303.github.io/blog/"
 languageCode = "en-us"
 pagination.pagerSize = 5
 title = "Dean Hiran"
