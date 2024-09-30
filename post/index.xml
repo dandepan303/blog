@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on Dean Hiran</title><link>https://dandepan303.github.io/blog/post/</link><description>Recent content in Posts on Dean Hiran</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Wed, 18 Sep 2024 10:07:25 +0000</lastBuildDate><atom:link href="https://dandepan303.github.io/blog/post/index.xml" rel="self" type="application/rss+xml"/><item><title>Pulsar Xlite V3 Review (Size 2)</title><link>https://dandepan303.github.io/blog/p/pulsar-xlite-v3-review/</link><pubDate>Wed, 18 Sep 2024 10:07:25 +0000</pubDate><guid>https://dandepan303.github.io/blog/p/pulsar-xlite-v3-review/</guid><description>&lt;img src="https://dandepan303.github.io/blog/p/pulsar-xlite-v3-review/cover.jpg" alt="Featured image of post Pulsar Xlite V3 Review (Size 2)" />&lt;p>&amp;ndash; Mouse Review Coming Soon &amp;ndash;&lt;/p>
+&lt;p>Update 9/18/24: Testing mouse! Review coming next week!&lt;/p>
+&lt;blockquote>
+&lt;p>Photo by &lt;a class="link" href="https://unsplash.com/@pawel_czerwinski" target="_blank" rel="noopener"
+>Pawel Czerwinski&lt;/a> on &lt;a class="link" href="https://unsplash.com/" target="_blank" rel="noopener"
+>Unsplash&lt;/a>&lt;/p>
+&lt;/blockquote></description></item><item><title>Hardmodding My Switch</title><link>https://dandepan303.github.io/blog/p/hardmodding-my-switch/</link><pubDate>Fri, 13 Sep 2024 08:34:23 +0000</pubDate><guid>https://dandepan303.github.io/blog/p/hardmodding-my-switch/</guid><description>&lt;img src="https://dandepan303.github.io/blog/p/hardmodding-my-switch/cover.jpg" alt="Featured image of post Hardmodding My Switch" />&lt;blockquote>
+&lt;h2 id="quick-warning">QUICK WARNING
+&lt;/h2>&lt;p>This is not a comprehensive guide. Just a blog post about how I did it myself. If you want to &amp;ldquo;mod/hack&amp;rdquo; your Switch, I recommend following thourough guides on &lt;a class="link" href="https://Switch.hacks.guide" target="_blank" rel="noopener"
+>Switch.hacks.guide&lt;/a> and following the dissassembly guides on &lt;a class="link" href="https://www.ifixit.com/Teardown/Nintendo&amp;#43;Switch&amp;#43;Teardown/78263?srsltid=AfmBOopafqIlha4w_7wViLBNHRTsR9xevz8mXbvGGDWJCnt6BXANPRET" target="_blank" rel="noopener"
+>ifixit&lt;/a>. As always, you, and only you, are responsible for what happens to your console.&lt;/p>
+&lt;/blockquote>
+&lt;h2 id="background">Background
+&lt;/h2>&lt;p>I’ve had my Nintendo Switch sitting around and collecting dust for a while now. My interest was piqued when I learned about the combination of &lt;a class="link" href="https://github.com/ptitSeb/box64" target="_blank" rel="noopener"
+>box64&lt;/a> and &lt;a class="link" href="https://winehq.org" target="_blank" rel="noopener"
+>wine64&lt;/a>, two programs that emulate x86 architectures and windows applications efficiently. I was even more excited when I learned about the &lt;a class="link" href="https://switchroot.org/" target="_blank" rel="noopener"
+>switchroot&lt;/a> project, a project that allows people to run Ubuntu 24.04, Fedora 39, and Android 14 on the Switch natively!&lt;/p>
+&lt;h2 id="how-powerful-is-the-switch">How powerful is the Switch?
+&lt;/h2>&lt;p>After doing a bit of research, the Switch runs on the Nvidia Tegra X1, an 8-year-old veteran ARM processor that still packs a bit of a punch!&lt;/p>
+&lt;p>&lt;img src="https://dandepan303.github.io/blog/blog/p/hardmodding-my-switch/performance.png"
+width="1920"
+height="1000"
+srcset="https://dandepan303.github.io/blog/blog/p/hardmodding-my-switch/performance_hu6663415278788108390.png 480w, https://dandepan303.github.io/blog/blog/p/hardmodding-my-switch/performance_hu6454420309454488119.png 1024w"
+loading="lazy"
+alt="Performance graphed using Geekbench 5. Credit: Geekerwan on YouTube"
+class="gallery-image"
+data-flex-grow="192"
+data-flex-basis="460px"
+>&lt;/p>
+&lt;p>Normally, the Switch’s CPU is underclocked and undervolted to a meager 1 GHz (for thermals and battery life). On the other hand, the X1 is rated to go as fast as 2 ghz, and with the correct overclocking, we can achieve 2.3 GHz on the CPU, 1267 MHz on the GPU, and 2311 MHz on the RAM. This is more on par with the Snapdragon 821, very impressive for a processor of this age.&lt;/p>
+&lt;h2 id="how-can-i-jailbreak-my-switch">How can I jailbreak my Switch?
+&lt;/h2>&lt;p>The main factor in the method of jailbreaking your Switch depends on your model. There are 2 main “models” for the original Switch Erista 2017 - early 2018 models (also referred to as unpatched or V1) and Mariko (patched, V2). You can find out which one you have at &lt;a class="link" href="https://ismyswitchpatched.com/" target="_blank" rel="noopener"
+>Is My Switch Patched?&lt;/a> and putting in your serial number.&lt;/p>
+&lt;p>For Erista consoles, there is a bug that exists, allowing you to short 2 pins on the right JoyCon rail to bypass BOOT0 and inject a payload for your Switch to boot instead of HorizonOS (normal Switch OS). This can be achieved by soldering a joy-con, or using a paperclip or rcm jig.&lt;/p>
+&lt;p>For Mariko (V2) consoles, they are only able to be jailbroken by using a modchip, which requires soldering 4 tiny contacts to 2 capacitors on the CPU to “voltage glitch” the CPU into booting payload.bin on the microsd card instead of BOOT0. The modchip works by infiltrating the communication between the main board and the sysnand. This is an extremely condensed explanation, and if you want to a full one, you can visit this website.&lt;/p>
+&lt;p>For Nintendo Switch oled models, you also need a modchip, but the process is much more lengthy and requires a microscope.
+I, personally own a Switch V2, so I will go down the modchip route.&lt;/p>
+&lt;h2 id="modchipping">Modchipping
+&lt;/h2>&lt;p>For modchipping my Switch, I will be using the Picofly Core, based on the fully open source RP2040 microcontroller and it&amp;rsquo;s firmware.&lt;/p>
+&lt;p>You can find this modchip on AliExpress by searching Picofly Core, for about $11-$12. I personally got the modchip in a flash sale, only costing me $1, making it $2.12 after taxes and shipping! Flash sales are pretty common, so I reccomend trying to find the modchip on multiple devices before buying.&lt;/p>
+&lt;p>After waiting for around 2 weeks, the modchip is finally here!&lt;/p>
+&lt;p>&lt;img src="https://dandepan303.github.io/blog/blog/p/hardmodding-my-switch/picofly-core.png"
+width="612"
+height="408"
+srcset="https://dandepan303.github.io/blog/blog/p/hardmodding-my-switch/picofly-core_hu12371958642707873961.png 480w, https://dandepan303.github.io/blog/blog/p/hardmodding-my-switch/picofly-core_hu5743107320694835483.png 1024w"
+loading="lazy"
+alt="The Picofly Core parts."
+class="gallery-image"
+data-flex-grow="150"
+data-flex-basis="360px"
+>&lt;/p>
+&lt;p>The USB-C port on the modchip pugs into the computer, and by holding the BOOT button, we are able to flash the modchip with the &lt;a class="link" href="https://guide.nx-modchip.info/modchip/firmware/firmware.uf2" target="_blank" rel="noopener"
+>latest firmware&lt;/a>.&lt;/p>
+&lt;p>You may have noticed by now that there are 2 SoC ribbon cables with version numbers labeled on them. This is because the modchip is compatible with both V1 and V2 Switches. (The only reason you would install a modchip on a V1 Switch is if you don&amp;rsquo;t want to enter RCM every time you turn off and on the switch). For my purposes, I am using the V2 modchip SoC ribbon cable.&lt;/p>
+&lt;h2 id="6-year-old-flux-and-215c-sticks">6-year-old flux and 215C Sticks
+&lt;/h2>&lt;p>These are my recommendation for tools to install the modchip.&lt;/p>
+&lt;ul>
+&lt;li>A soldering iron with a small(er) tip (preferably temperature controlled that can reach 350C consistently)&lt;/li>
+&lt;li>Good quality flux&lt;/li>
+&lt;li>The right screwdriver bits (+00 and Y1.5 bits)&lt;/li>
+&lt;li>Thermal paste (preferably non-conductive)&lt;/li>
+&lt;li>Isopropyl Alcohol (preferably 95-99% IPA)&lt;/li>
+&lt;li>Modchip (including the SoC ribbon cable)&lt;/li>
+&lt;li>Toothpicks/Q-tips (to remove the thermal paste between the capacitors on the SoC die)&lt;/li>
+&lt;li>Solder (leaded is recommended, unleaded will work depending on your skill level)&lt;/li>
+&lt;li>Magnifying goggles/microscope (microscope is optional but recommended)&lt;/li>
+&lt;/ul>
+&lt;p>Time to open the Switch up!&lt;/p>
+&lt;p>&lt;img src="https://dandepan303.github.io/blog/blog/p/hardmodding-my-switch/1.png"
+width="1280"
+height="853"
+srcset="https://dandepan303.github.io/blog/blog/p/hardmodding-my-switch/1_hu14077026303815887444.png 480w, https://dandepan303.github.io/blog/blog/p/hardmodding-my-switch/1_hu7553347632200766111.png 1024w"
+loading="lazy"
+alt="The Switch&amp;rsquo;s backplate"
+class="gallery-image"
+data-flex-grow="150"
+data-flex-basis="360px"
+> &lt;img src="https://dandepan303.github.io/blog/blog/p/hardmodding-my-switch/2.png"
+width="1280"
+height="853"
+srcset="https://dandepan303.github.io/blog/blog/p/hardmodding-my-switch/2_hu10277853871358274454.png 480w, https://dandepan303.github.io/blog/blog/p/hardmodding-my-switch/2_hu2945459937928139213.png 1024w"
+loading="lazy"
+alt="That&amp;rsquo;s a beefy back heatshield."
+class="gallery-image"
+data-flex-grow="150"
+data-flex-basis="360px"
+>&lt;/p>
+&lt;p>The four tri-point Y1.5 bits are Nintendo&amp;rsquo;s way of saying &amp;ldquo;keep out!&amp;rdquo;, but the back cover comes off easily after removing the 7+00 bits, 2 on top, 2 on bottom, one hidden under the micro-sd card, and both of the the third screws down from the top on each Joy-Con rail.&lt;/p>
+&lt;p>If you think about it, the Switch is really impressive for its form factor, having an ingenious active cooling system.&lt;/p>
+&lt;p>Next step is to pick at and remove the micro-sd card reader.&lt;/p>
+&lt;p>&lt;img src="https://dandepan303.github.io/blog/blog/p/hardmodding-my-switch/3.png"
+width="1280"
+height="853"
+srcset="https://dandepan303.github.io/blog/blog/p/hardmodding-my-switch/3_hu833188892376826035.png 480w, https://dandepan303.github.io/blog/blog/p/hardmodding-my-switch/3_hu2882659221098470056.png 1024w"
+loading="lazy"
+alt="I&amp;rsquo;m all in for easy replaceable parts."
+class="gallery-image"
+data-flex-grow="150"
+data-flex-basis="360px"
+> &lt;img src="https://dandepan303.github.io/blog/blog/p/hardmodding-my-switch/4.png"
+width="1280"
+height="853"
+srcset="https://dandepan303.github.io/blog/blog/p/hardmodding-my-switch/4_hu5903946626323312564.png 480w, https://dandepan303.github.io/blog/blog/p/hardmodding-my-switch/4_hu17465465352725969630.png 1024w"
+loading="lazy"
+alt="That&amp;rsquo;s a nice heatsink and fan."
+class="gallery-image"
+data-flex-grow="150"
+data-flex-basis="360px"
+>&lt;/p>
+&lt;p>Let&amp;rsquo;s remove the 6 +00 screws to reveal the mainboard!&lt;/p>
+&lt;p>Removing the 3 screws on the heatsink reveals the IHS (Internal Heat Spreader), responsible for removing heat from the SoC die and the RAM. This is where the SoC ribbon cable will sit.&lt;/p>
+&lt;p>&lt;img src="https://dandepan303.github.io/blog/blog/p/hardmodding-my-switch/5.png"
+width="1280"
+height="853"
+srcset="https://dandepan303.github.io/blog/blog/p/hardmodding-my-switch/5_hu9505612692731206580.png 480w, https://dandepan303.github.io/blog/blog/p/hardmodding-my-switch/5_hu9561628824965301611.png 1024w"
+loading="lazy"
+alt="Just use IPA and q-tips to remove the thermal gunk."
+class="gallery-image"
+data-flex-grow="150"
+data-flex-basis="360px"
+> &lt;img src="https://dandepan303.github.io/blog/blog/p/hardmodding-my-switch/6.png"
+width="1280"
+height="853"
+srcset="https://dandepan303.github.io/blog/blog/p/hardmodding-my-switch/6_hu12733522464295943127.png 480w, https://dandepan303.github.io/blog/blog/p/hardmodding-my-switch/6_hu17704028781759056254.png 1024w"
+loading="lazy"
+alt="The capacitors are so tiny!"
+class="gallery-image"
+data-flex-grow="150"
+data-flex-basis="360px"
+>&lt;/p>
+&lt;p>Time to pry open the IHS to expose the bare SoC die and RAM chips.&lt;/p>
+&lt;p>We can now clean up the thermal paste on the SoC die and around/in-between the capacitors on the SoC using IPA and q-tips.&lt;/p>
+&lt;p>Before we can install the modchip, we have to pre-tin the ribbon cable. This works by putting on solder onto the contacts before we install it. This is much easier than melting the solder when it is on the capacitor because it could cause overbridging.&lt;/p>
+&lt;p>After pre-tinning, we can melt the solder to bridge the capactor contacts.&lt;/p>
+&lt;p>&lt;img src="https://dandepan303.github.io/blog/blog/p/hardmodding-my-switch/lined-up.jpg"
+width="4032"
+height="3024"
+srcset="https://dandepan303.github.io/blog/blog/p/hardmodding-my-switch/lined-up_hu3501352200954921321.jpg 480w, https://dandepan303.github.io/blog/blog/p/hardmodding-my-switch/lined-up_hu13130733135086387442.jpg 1024w"
+loading="lazy"
+alt="Yes, that flux is 6 years old."
+class="gallery-image"
+data-flex-grow="133"
+data-flex-basis="320px"
+>&lt;/p>
+&lt;p>Now, all that is left to do is to unplug the eMMc module and insert the modchip itself!&lt;/p>
+&lt;p>&lt;img src="https://dandepan303.github.io/blog/blog/p/hardmodding-my-switch/modchip-installed.png"
+width="6000"
+height="4000"
+srcset="https://dandepan303.github.io/blog/blog/p/hardmodding-my-switch/modchip-installed_hu8331060487661416261.png 480w, https://dandepan303.github.io/blog/blog/p/hardmodding-my-switch/modchip-installed_hu4563741853490259568.png 1024w"
+loading="lazy"
+alt="The modchip will sit above the IHS."
+class="gallery-image"
+data-flex-grow="150"
+data-flex-basis="360px"
+>&lt;/p>
+&lt;p>Turning the Switch on, we are greeted by the picofly menu!&lt;/p>
+&lt;p>&lt;img src="https://dandepan303.github.io/blog/blog/p/hardmodding-my-switch/success.jpg"
+width="3024"
+height="4032"
+srcset="https://dandepan303.github.io/blog/blog/p/hardmodding-my-switch/success_hu18069924298232337776.jpg 480w, https://dandepan303.github.io/blog/blog/p/hardmodding-my-switch/success_hu12276085333634663001.jpg 1024w"
+loading="lazy"
+alt="The Switch needs a few seconds to voltage glitch before showing the menu."
+class="gallery-image"
+data-flex-grow="75"
+data-flex-basis="180px"
+>&lt;/p>
+&lt;p>We have installed the modchip successfully! This post is already getting long, so I will show what I will do with my jaibroken Switch in a later post. Stay tuned!&lt;/p>
+&lt;blockquote>
+&lt;p>Photos by &lt;a class="link" href="https://github.com/dandepan303" target="_blank" rel="noopener"
+>Me, Dean Hiran&lt;/a>&lt;/p>
+&lt;/blockquote></description></item><item><title>My Favorite Keyboard Build So Far</title><link>https://dandepan303.github.io/blog/p/mode-envoy/</link><pubDate>Tue, 27 Aug 2024 18:12:27 +0000</pubDate><guid>https://dandepan303.github.io/blog/p/mode-envoy/</guid><description>&lt;img src="https://dandepan303.github.io/blog/p/mode-envoy/cover.jpg" alt="Featured image of post My Favorite Keyboard Build So Far" />&lt;h2 id="backstory">Backstory
+&lt;/h2>&lt;p>I built this specific keyboard a month ago, (before this blog existed) and never thought about posting it until now.
+I was looking for something other than my modded Rainy75 Pro. After hours of researching, I decided on a creamy sound profile with linear switches, specifically Alpaca v2s. For the creamy sound profile, I decided on the Mode Envoy from mode designs with an FR4 plate, white coating, and gold accents and weights.&lt;/p>
+&lt;p>After ordering all the parts, it was time to assemble them.&lt;/p>
+&lt;h2 id="my-personal-lubing-process">My personal lubing process
+&lt;/h2>&lt;p>Lubing is essential to getting a smoother glide on any switch. But even with today’s much better factory lubing, I prefer to lube my switches myself.&lt;/p>
+&lt;p>&lt;img src="https://dandepan303.github.io/blog/blog/p/mode-envoy/tools.jpg"
+width="4032"
+height="3024"
+srcset="https://dandepan303.github.io/blog/blog/p/mode-envoy/tools_hu790860306083595438.jpg 480w, https://dandepan303.github.io/blog/blog/p/mode-envoy/tools_hu13114851085760608426.jpg 1024w"
+loading="lazy"
+alt="Tools Of the Trade."
+class="gallery-image"
+data-flex-grow="133"
+data-flex-basis="320px"
+>&lt;/p>
+&lt;p>From left to right: switch lubing station switch opener, Krytox 205g0, Krytox xht-bdz, Krytox 105g0, stem holder, brush.
+While not essential, the switch lubing station helps a lot when having to mass-lube. It contains slots for springs, stems, and both the bottom and the top housings.&lt;/p>
+&lt;p>The switch opener, in my opinion, is absolutely essential for lubing. You could, try to pry open each of your switches with a screwdriver, but that comes with a risk of hurting yourself.&lt;/p>
+&lt;p>Each different type of lube has its own viscosity and use case. Krytox is a very popular brand in the hobbyist keyboard market, known for their industrial grade lubricants.&lt;/p>
+&lt;ul>
+&lt;li>205g0: Stems, housings, and springs of switches&lt;/li>
+&lt;li>xht-bdz: Stabilizer wires (Ill get to this later)&lt;/li>
+&lt;li>105g0: Oil based lube for springs&lt;/li>
+&lt;li>Stem holder: Pretty self explanatory. Holds stems for easy lubing. Not essential, but it makes things 100x easier.&lt;/li>
+&lt;li>Brush: A brush.&lt;/li>
+&lt;/ul>
+&lt;p>&lt;img src="https://dandepan303.github.io/blog/blog/p/mode-envoy/switch-opener.jpg"
+width="3024"
+height="4032"
+srcset="https://dandepan303.github.io/blog/blog/p/mode-envoy/switch-opener_hu6652226123371051031.jpg 480w, https://dandepan303.github.io/blog/blog/p/mode-envoy/switch-opener_hu1759035999815017692.jpg 1024w"
+loading="lazy"
+alt="How a switch opener works"
+class="gallery-image"
+data-flex-grow="75"
+data-flex-basis="180px"
+> &lt;img src="https://dandepan303.github.io/blog/blog/p/mode-envoy/switch-open.jpg"
+width="3024"
+height="4032"
+srcset="https://dandepan303.github.io/blog/blog/p/mode-envoy/switch-open_hu10712622709354651040.jpg 480w, https://dandepan303.github.io/blog/blog/p/mode-envoy/switch-open_hu17003422896813612078.jpg 1024w"
+loading="lazy"
+alt="A switch after being opened."
+class="gallery-image"
+data-flex-grow="75"
+data-flex-basis="180px"
+>&lt;/p>
+&lt;p>The switch opener makes things way easier. All you have to do is press down on the switch to open it.&lt;/p>
+&lt;p>&lt;img src="https://dandepan303.github.io/blog/blog/p/mode-envoy/parts.png"
+width="1024"
+height="853"
+srcset="https://dandepan303.github.io/blog/blog/p/mode-envoy/parts_hu1660812126051079489.png 480w, https://dandepan303.github.io/blog/blog/p/mode-envoy/parts_hu4789513234600616533.png 1024w"
+loading="lazy"
+alt="The parts of a standard mechanical switch keyboard"
+class="gallery-image"
+data-flex-grow="120"
+data-flex-basis="288px"
+>&lt;/p>
+&lt;p>Once the switch is opened, the switch has 4 main parts. The top and bottom housings, the stem, and the spring. Personally, I prefer to only lube the stem and the spring, as the spring, which contats the bottom housing, will lube the bottom housing automatically. The stem, which contacts the top housing and slides against it, will also lube the top housing.&lt;/p>
+&lt;p>&lt;img src="https://dandepan303.github.io/blog/blog/p/mode-envoy/lubing-stem.jpg"
+width="3024"
+height="4032"
+srcset="https://dandepan303.github.io/blog/blog/p/mode-envoy/lubing-stem_hu15671213641781217730.jpg 480w, https://dandepan303.github.io/blog/blog/p/mode-envoy/lubing-stem_hu931274761773444398.jpg 1024w"
+loading="lazy"
+alt="Lubing the stem of the switch with 205g0"
+class="gallery-image"
+data-flex-grow="75"
+data-flex-basis="180px"
+> &lt;img src="https://dandepan303.github.io/blog/blog/p/mode-envoy/lubing-spring.jpg"
+width="3024"
+height="4032"
+srcset="https://dandepan303.github.io/blog/blog/p/mode-envoy/lubing-spring_hu15957871878669940290.jpg 480w, https://dandepan303.github.io/blog/blog/p/mode-envoy/lubing-spring_hu15739257108510642439.jpg 1024w"
+loading="lazy"
+alt="Lubing the ends of the spring with 205g0"
+class="gallery-image"
+data-flex-grow="75"
+data-flex-basis="180px"
+>&lt;/p>
+&lt;p>After inserting the switches, assembling the board with all the foams, and putting on the keycaps, we are done!&lt;/p>
+&lt;h2 id="results">Results
+&lt;/h2>&lt;p>The keyboard turned out great, and I think it provides a much needed contrast to my all black setup.&lt;/p>
+&lt;p>&lt;img src="https://dandepan303.github.io/blog/blog/p/mode-envoy/top.jpg"
+width="3897"
+height="2923"
+srcset="https://dandepan303.github.io/blog/blog/p/mode-envoy/top_hu44983841290152455.jpg 480w, https://dandepan303.github.io/blog/blog/p/mode-envoy/top_hu18106064493166550634.jpg 1024w"
+loading="lazy"
+alt="It looks (and feels) amazing!"
+class="gallery-image"
+data-flex-grow="133"
+data-flex-basis="319px"
+> &lt;img src="https://dandepan303.github.io/blog/blog/p/mode-envoy/side.jpg"
+width="4032"
+height="3024"
+srcset="https://dandepan303.github.io/blog/blog/p/mode-envoy/side_hu17965802156200139895.jpg 480w, https://dandepan303.github.io/blog/blog/p/mode-envoy/side_hu4947584445066518428.jpg 1024w"
+loading="lazy"
+alt="(Milkshake keycaps used)"
+class="gallery-image"
+data-flex-grow="133"
+data-flex-basis="320px"
+>&lt;/p>
+&lt;p>Now, for the most important part, the sound!&lt;/p>
+&lt;div class="video-wrapper">
+&lt;iframe loading="lazy"
+src="https://www.youtube.com/embed/8ZhRrg-9bFA"
+allowfullscreen
+title="YouTube Video"
+>
+&lt;/iframe>
+&lt;/div>
+&lt;p>An interesting sound profile, it has some cremy-ness to it, but it also has something else I can&amp;rsquo;t put my finger on. I personally like it!&lt;/p>
+&lt;blockquote>
+&lt;p>Photos by &lt;a class="link" href="https://github.com/dandepan303" target="_blank" rel="noopener"
+>Me, Dean Hiran&lt;/a>&lt;/p>
+&lt;/blockquote></description></item><item><title>Hello World?</title><link>https://dandepan303.github.io/blog/p/hello-world/</link><pubDate>Fri, 23 Aug 2024 08:34:23 +0000</pubDate><guid>https://dandepan303.github.io/blog/p/hello-world/</guid><description>&lt;img src="https://dandepan303.github.io/blog/p/hello-world/cover.jpg" alt="Featured image of post Hello World?" />&lt;p>Hey! It&amp;rsquo;s me, Dean. Welp, here we are. This is my (almost) selfhosted blog/portfolio/git server for my stuff. I will probably post anything here that I think is interesting.&lt;/p>
+&lt;p>This site is mostly inspired by my great friend &lt;a class="link" href="https://clucknugget.net" target="_blank" rel="noopener"
+>nixwiz&lt;/a> and you should check him out. He is way smarter than me and even has an ssh server located on his awesome (truly) selfhosted website.&lt;/p>
+&lt;blockquote>
+&lt;p>Photo by &lt;a class="link" href="https://unsplash.com/@pawel_czerwinski" target="_blank" rel="noopener"
+>Pawel Czerwinski&lt;/a> on &lt;a class="link" href="https://unsplash.com/" target="_blank" rel="noopener"
+>Unsplash&lt;/a>&lt;/p>
+&lt;/blockquote></description></item></channel></rss>

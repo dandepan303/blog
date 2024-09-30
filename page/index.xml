@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Pages on Dean Hiran</title><link>https://dandepan303.github.io/blog/page/</link><description>Recent content in Pages on Dean Hiran</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Sun, 06 Mar 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://dandepan303.github.io/blog/page/index.xml" rel="self" type="application/rss+xml"/><item><title>Archives</title><link>https://dandepan303.github.io/blog/archives/</link><pubDate>Sun, 06 Mar 2022 00:00:00 +0000</pubDate><guid>https://dandepan303.github.io/blog/archives/</guid><description/></item><item><title>Henry's Music Reviews</title><link>https://dandepan303.github.io/blog/henrys-music-reviews/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://dandepan303.github.io/blog/henrys-music-reviews/</guid><description>&lt;p>A requested section for music reviews by my friend, Henry. Click on each song&amp;rsquo;s tab to see the song on Spotify.&lt;/p></description></item><item><title>My Notes</title><link>https://dandepan303.github.io/blog/my-notes/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://dandepan303.github.io/blog/my-notes/</guid><description>&lt;p>Here is where I put my personal notes for anything I need to use often, commands, websites, and other stuffs.&lt;/p>
+&lt;hr>
+&lt;h2 id="github-codespaces">Github Codespaces
+&lt;/h2>&lt;p>GitHub Codespaces is a cloud-based development environment hosted by GitHub.&lt;/p>
+&lt;h3 id="x11-display-server">X11 Display Server
+&lt;/h3>&lt;p>When running a default Codespaces image, sometimes I want to use GUI applications (e.g. web browsers for testing).&lt;/p>
+&lt;p>This is possible with noVNC (a web-based VNC client) and Xtigervnc (a VNC server that supports X11). Here’s a script to set them up with Docker Compose. To use it, copy the following snippet into a new Bash terminal:&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
+&lt;/span>&lt;span class="lnt"> 2
+&lt;/span>&lt;span class="lnt"> 3
+&lt;/span>&lt;span class="lnt"> 4
+&lt;/span>&lt;span class="lnt"> 5
+&lt;/span>&lt;span class="lnt"> 6
+&lt;/span>&lt;span class="lnt"> 7
+&lt;/span>&lt;span class="lnt"> 8
+&lt;/span>&lt;span class="lnt"> 9
+&lt;/span>&lt;span class="lnt">10
+&lt;/span>&lt;span class="lnt">11
+&lt;/span>&lt;span class="lnt">12
+&lt;/span>&lt;span class="lnt">13
+&lt;/span>&lt;span class="lnt">14
+&lt;/span>&lt;span class="lnt">15
+&lt;/span>&lt;span class="lnt">16
+&lt;/span>&lt;span class="lnt">17
+&lt;/span>&lt;span class="lnt">18
+&lt;/span>&lt;span class="lnt">19
+&lt;/span>&lt;span class="lnt">20
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-diff" data-lang="diff">&lt;span class="line">&lt;span class="cl">mkdir -p ~/setup-display &amp;amp;&amp;amp; cd ~/setup-display
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">cat &amp;gt; docker-compose.yml &amp;lt;&amp;lt;EOF
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">services:
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> display:
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> image: ghcr.io/dtinth/xtigervnc-docker:main
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> tmpfs: /tmp
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> restart: always
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> environment:
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> VNC_GEOMETRY: 1440x900
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> ports:
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> - 127.0.0.1:5900:5900
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> - 127.0.0.1:6000:6000
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> novnc:
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> image: geek1011/easy-novnc
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> restart: always
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> command: -a :5800 -h display --no-url-password
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> ports:
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> - 127.0.0.1:5800:5800
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">EOF
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">docker compose up -d
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>Once run, we need to tell our applications to connect to the server we started. To do that, set the DISPLAY environment variable to &lt;code>127.0.0.1:0&lt;/code>:&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-diff" data-lang="diff">&lt;span class="line">&lt;span class="cl">export DISPLAY=127.0.0.1:0
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>Once that’s done, we can start our GUI applications from that terminal.&lt;/p></description></item><item><title>My Stuff</title><link>https://dandepan303.github.io/blog/my-stuff/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://dandepan303.github.io/blog/my-stuff/</guid><description>&lt;p>This is where I put my stuff in my setup. Maybe it&amp;rsquo;s to flex, but it&amp;rsquo;s mostly for me in case I ever forget what I have.&lt;/p>
+&lt;hr>
+&lt;h2 id="main-pc">Main PC
+&lt;/h2>&lt;p>It renders frames and executes programs when it feels like it&lt;/p>
+&lt;blockquote>
+&lt;p>GPU&lt;/p>
+&lt;/blockquote>
+&lt;ul>
+&lt;li>GIGABYTE NVIDIA RTX 4070&lt;/li>
+&lt;/ul>
+&lt;blockquote>
+&lt;p>CPU&lt;/p>
+&lt;/blockquote>
+&lt;ul>
+&lt;li>AMD Ryzen 7 7800X3D&lt;/li>
+&lt;li>Cooled with a NZXT Kraken 240 Elite&lt;/li>
+&lt;/ul>
+&lt;blockquote>
+&lt;p>RAM&lt;/p>
+&lt;/blockquote>
+&lt;ul>
+&lt;li>T-Force Vulcan DDR5
+&lt;ul>
+&lt;li>2 x 8gb (16gb)&lt;/li>
+&lt;li>@7000 mhz (XMP 2)&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;blockquote>
+&lt;p>Motherboard&lt;/p>
+&lt;/blockquote>
+&lt;ul>
+&lt;li>GIGABYTE B550&lt;/li>
+&lt;/ul>
+&lt;blockquote>
+&lt;p>Case&lt;/p>
+&lt;/blockquote>
+&lt;ul>
+&lt;li>NZXT H6 Flow RGB&lt;/li>
+&lt;/ul>
+&lt;blockquote>
+&lt;p>Power Supply&lt;/p>
+&lt;/blockquote>
+&lt;ul>
+&lt;li>GIGABYTE 750w 80+ Gold Certified (hoping it won&amp;rsquo;t catch fire)&lt;/li>
+&lt;/ul>
+&lt;h2 id="peripherals">Peripherals
+&lt;/h2>&lt;blockquote>
+&lt;p>Keyboard&lt;/p>
+&lt;/blockquote>
+&lt;ul>
+&lt;li>Custom built &lt;a class="link" href="https://dean.is-a.dev/p/mode-envoy/" target="_blank" rel="noopener"
+>Mode Envoy&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;blockquote>
+&lt;p>Mice&lt;/p>
+&lt;/blockquote>
+&lt;ul>
+&lt;li>Main (gaming): Pulsar Xlite V3 (review coming soon)&lt;/li>
+&lt;li>Secondary (productivity): Logitech Pebble&lt;/li>
+&lt;/ul>
+&lt;blockquote>
+&lt;p>Microphone&lt;/p>
+&lt;/blockquote>
+&lt;ul>
+&lt;li>Movo VXR10 on a custom 3d-printed mount&lt;/li>
+&lt;/ul>
+&lt;h2 id="laptops">Laptops
+&lt;/h2>&lt;blockquote>
+&lt;p>School&lt;/p>
+&lt;/blockquote>
+&lt;ul>
+&lt;li>Lenovo Flex 5i Chromebook (13in)
+&lt;ul>
+&lt;li>Intel Core i3 11th Gen&lt;/li>
+&lt;li>Managed ChromeOS&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;blockquote>
+&lt;p>Productivity&lt;/p>
+&lt;/blockquote>
+&lt;ul>
+&lt;li>
+&lt;p>Lenovo Flex 5i Chromebook (14 in)&lt;/p>
+&lt;ul>
+&lt;li>Intel Core i3 12th Gen&lt;/li>
+&lt;li>Running Windows 11&lt;/li>
+&lt;li>Dualboot ChromeOS&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>Macbook Air 2020&lt;/p>
+&lt;ul>
+&lt;li>Apple M1&lt;/li>
+&lt;li>Dualboot Ubuntu 24.04 and MacOS Sequoia&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h2 id="audio">Audio
+&lt;/h2>&lt;blockquote>
+&lt;p>Airpods&lt;/p>
+&lt;/blockquote>
+&lt;ul>
+&lt;li>2x (Fake) Airpods Pro Gen 2&lt;/li>
+&lt;/ul>
+&lt;blockquote>
+&lt;p>Headphones&lt;/p>
+&lt;/blockquote>
+&lt;ul>
+&lt;li>Sony WH-1000XM5&lt;/li>
+&lt;/ul>
+&lt;blockquote>
+&lt;p>Speakers&lt;/p>
+&lt;/blockquote>
+&lt;ul>
+&lt;li>2x Sonos Move 2&lt;/li>
+&lt;/ul>
+&lt;hr></description></item><item><title>Search</title><link>https://dandepan303.github.io/blog/search/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://dandepan303.github.io/blog/search/</guid><description/></item></channel></rss>
